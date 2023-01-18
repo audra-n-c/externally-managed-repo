@@ -31,7 +31,10 @@
 		font-size: var(--branding--title--font-size);
 	}
 
+<<<<<<< HEAD
 	.privacy-policy,
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	.powered-by {
 		margin-top: calc(0.5 * var(--global--spacing-vertical));
 	}
@@ -40,19 +43,25 @@
 		display: flex;
 		align-items: center;
 
+<<<<<<< HEAD
 		.site-name {
 			margin-right: calc(0.5 * var(--global--spacing-vertical));
 		}
 
 		.privacy-policy,
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		.powered-by {
 			margin-top: initial;
 			margin-left: auto;
 		}
+<<<<<<< HEAD
 
 		.privacy-policy + .powered-by {
 			margin-left: calc(0.5 * var(--global--spacing-vertical));
 		}
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 
 	a {

@@ -21,6 +21,10 @@
 
 		a {
 			padding: calc(1.25 * var(--primary-nav--padding)) var(--primary-nav--padding);
+<<<<<<< HEAD
+=======
+			transition: transform 0.1s ease;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			color: var(--footer--color-link);
 
 			&:link,
@@ -62,10 +66,13 @@
 			&:hover {
 				transform: scale(1.1);
 			}
+<<<<<<< HEAD
 
 			@media (prefers-reduced-motion: no-preference) {
 				transition: transform 0.1s ease;
 			}
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		}
 	}
 

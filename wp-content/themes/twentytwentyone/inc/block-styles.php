@@ -6,14 +6,22 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 if ( function_exists( 'register_block_style' ) ) {
 	/**
 	 * Register block styles.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @return void
 	 */

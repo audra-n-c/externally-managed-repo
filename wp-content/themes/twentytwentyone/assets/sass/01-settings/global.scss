@@ -227,7 +227,11 @@ $baseline-unit: 10px;
 	--widget--spacing-menu: calc(0.66 * var(--global--spacing-unit));
 
 	/* Admin-bar height */
+<<<<<<< HEAD
 	--global--admin-bar--height: 0px;
+=======
+	--global--admin-bar--height: 0;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 }
 
 .admin-bar {

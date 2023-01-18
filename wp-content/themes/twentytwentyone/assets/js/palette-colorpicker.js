@@ -5,8 +5,11 @@
  * with a few tweaks:
  * 		Removed the hue picker script because we don't use it here
  * 		Added the "palettes" argument in wpColorPicker().
+<<<<<<< HEAD
  *
  * @since Twenty Twenty-One 1.0
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 wp.customize.controlConstructor['twenty-twenty-one-color'] = wp.customize.Control.extend( {
 	ready: function() {

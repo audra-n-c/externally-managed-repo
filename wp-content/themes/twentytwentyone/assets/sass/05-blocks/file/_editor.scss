@@ -16,10 +16,16 @@
 		@include button-style();
 		display: inline-block;
 
+<<<<<<< HEAD
 		// Remove :focus styles in the editor
 		&:focus {
 			outline-offset: inherit;
 			outline: inherit;
+=======
+		&:hover {
+			color: var(--button--color-text-hover);
+			background: transparent;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		}
 	}
 }

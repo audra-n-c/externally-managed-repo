@@ -6,8 +6,11 @@
  * This is the source file for what is minified in the twenty_twenty_one_skip_link_focus_fix() PHP function.
  *
  * Learn more: https://git.io/vWdr2
+<<<<<<< HEAD
  *
  * @since Twenty Twenty-One 1.0
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 ( function() {
 	var isIe = /(trident|msie)/i.test( navigator.userAgent );

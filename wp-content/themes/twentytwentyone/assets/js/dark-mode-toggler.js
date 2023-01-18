@@ -44,9 +44,13 @@ function darkModeInitialLoad() {
 }
 
 function darkModeRepositionTogglerOnScroll() {
+<<<<<<< HEAD
 
 	var toggler = document.getElementById( 'dark-mode-toggler' ),
 		prevScroll = window.scrollY || document.documentElement.scrollTop,
+=======
+	var prevScroll = window.scrollY || document.documentElement.scrollTop,
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		currentScroll,
 
 		checkScroll = function() {
@@ -55,6 +59,7 @@ function darkModeRepositionTogglerOnScroll() {
 				currentScroll + ( window.innerHeight * 1.5 ) > document.body.clientHeight ||
 				currentScroll < prevScroll
 			) {
+<<<<<<< HEAD
 				toggler.classList.remove( 'hide' );
 			} else if ( currentScroll > prevScroll && 250 < currentScroll ) {
 				toggler.classList.add( 'hide' );
@@ -65,6 +70,15 @@ function darkModeRepositionTogglerOnScroll() {
 	if ( toggler ) {
 		window.addEventListener( 'scroll', checkScroll );
 	}
+=======
+				document.getElementById( 'dark-mode-toggler' ).classList.remove( 'hide' );
+			} else if ( currentScroll > prevScroll && 250 < currentScroll ) {
+				document.getElementById( 'dark-mode-toggler' ).classList.add( 'hide' );
+			}
+			prevScroll = currentScroll;
+		};
+	window.addEventListener( 'scroll', checkScroll );
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 }
 
 darkModeInitialLoad();

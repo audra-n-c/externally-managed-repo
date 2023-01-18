@@ -8,7 +8,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 ?>
@@ -18,7 +22,11 @@
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
+<<<<<<< HEAD
 	<footer id="colophon" class="site-footer">
+=======
+	<footer id="colophon" class="site-footer" role="contentinfo">
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
@@ -53,6 +61,7 @@
 					<?php endif; ?>
 				<?php endif; ?>
 			</div><!-- .site-name -->
+<<<<<<< HEAD
 
 			<?php
 			if ( function_exists( 'the_privacy_policy_link' ) ) {
@@ -60,12 +69,18 @@
 			}
 			?>
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			<div class="powered-by">
 				<?php
 				printf(
 					/* translators: %s: WordPress. */
 					esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
+<<<<<<< HEAD
 					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
+=======
+					'<a href="' . esc_attr__( 'https://wordpress.org/', 'twentytwentyone' ) . '">WordPress</a>'
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				);
 				?>
 			</div><!-- .powered-by -->

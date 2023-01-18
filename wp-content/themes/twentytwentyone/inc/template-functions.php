@@ -4,15 +4,26 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /**
  * Adds custom classes to the array of body classes.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param array $classes Classes for the body element.
+=======
+ * @since 1.0.0
+ *
+ * @param array $classes Classes for the body element.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return array
  */
 function twenty_twenty_one_body_classes( $classes ) {
@@ -40,9 +51,16 @@ add_filter( 'body_class', 'twenty_twenty_one_body_classes' );
 /**
  * Adds custom class to the array of posts classes.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param array $classes An array of CSS classes.
+=======
+ * @since 1.0.0
+ *
+ * @param array $classes An array of CSS classes.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return array
  */
 function twenty_twenty_one_post_classes( $classes ) {
@@ -55,7 +73,11 @@ add_filter( 'post_class', 'twenty_twenty_one_post_classes', 10, 3 );
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return void
  */
@@ -69,7 +91,11 @@ add_action( 'wp_head', 'twenty_twenty_one_pingback_header' );
 /**
  * Remove the `no-js` class from body if JS is supported.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return void
  */
@@ -81,9 +107,16 @@ add_action( 'wp_footer', 'twenty_twenty_one_supports_js' );
 /**
  * Changes comment form default fields.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param array $defaults The form defaults.
+=======
+ * @since 1.0.0
+ *
+ * @param array $defaults The form defaults.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return array
  */
 function twenty_twenty_one_comment_form_defaults( $defaults ) {
@@ -98,11 +131,16 @@ add_filter( 'comment_form_defaults', 'twenty_twenty_one_comment_form_defaults' )
 /**
  * Determines if post thumbnail can be displayed.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return bool
  */
 function twenty_twenty_one_can_show_post_thumbnail() {
+<<<<<<< HEAD
 	/**
 	 * Filters whether post thumbnail can be displayed.
 	 *
@@ -110,6 +148,8 @@ function twenty_twenty_one_can_show_post_thumbnail() {
 	 *
 	 * @param bool $show_post_thumbnail Whether to show post thumbnail.
 	 */
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	return apply_filters(
 		'twenty_twenty_one_can_show_post_thumbnail',
 		! post_password_required() && ! is_attachment() && has_post_thumbnail()
@@ -119,7 +159,11 @@ function twenty_twenty_one_can_show_post_thumbnail() {
 /**
  * Returns the size for avatars used in the theme.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return int
  */
@@ -128,6 +172,7 @@ function twenty_twenty_one_get_avatar_size() {
 }
 
 /**
+<<<<<<< HEAD
  * Creates continue reading text.
  *
  * @since Twenty Twenty-One 1.0
@@ -135,6 +180,13 @@ function twenty_twenty_one_get_avatar_size() {
 function twenty_twenty_one_continue_reading_text() {
 	$continue_reading = sprintf(
 		/* translators: %s: Post title. Only visible to screen readers. */
+=======
+ * Creates continue reading text
+ */
+function twenty_twenty_one_continue_reading_text() {
+	$continue_reading = sprintf(
+		/* translators: %s: Name of current post. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		esc_html__( 'Continue reading %s', 'twentytwentyone' ),
 		the_title( '<span class="screen-reader-text">', '</span>', false )
 	);
@@ -143,9 +195,13 @@ function twenty_twenty_one_continue_reading_text() {
 }
 
 /**
+<<<<<<< HEAD
  * Creates the continue reading link for excerpt.
  *
  * @since Twenty Twenty-One 1.0
+=======
+ * Create the continue reading link for excerpt.
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 function twenty_twenty_one_continue_reading_link_excerpt() {
 	if ( ! is_admin() ) {
@@ -157,9 +213,13 @@ function twenty_twenty_one_continue_reading_link_excerpt() {
 add_filter( 'excerpt_more', 'twenty_twenty_one_continue_reading_link_excerpt' );
 
 /**
+<<<<<<< HEAD
  * Creates the continue reading link.
  *
  * @since Twenty Twenty-One 1.0
+=======
+ * Create the continue reading link.
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 function twenty_twenty_one_continue_reading_link() {
 	if ( ! is_admin() ) {
@@ -167,16 +227,29 @@ function twenty_twenty_one_continue_reading_link() {
 	}
 }
 
+<<<<<<< HEAD
 // Filter the content more link.
+=======
+// Filter the excerpt more link.
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 add_filter( 'the_content_more_link', 'twenty_twenty_one_continue_reading_link' );
 
 if ( ! function_exists( 'twenty_twenty_one_post_title' ) ) {
 	/**
+<<<<<<< HEAD
 	 * Adds a title to posts and pages that are missing titles.
 	 *
 	 * @since Twenty Twenty-One 1.0
 	 *
 	 * @param string $title The title.
+=======
+	 * Add a title to posts and pages that are missing titles.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string $title The title.
+	 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 * @return string
 	 */
 	function twenty_twenty_one_post_title( $title ) {
@@ -188,11 +261,20 @@ add_filter( 'the_title', 'twenty_twenty_one_post_title' );
 /**
  * Gets the SVG code for a given icon.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param string $group The icon group.
  * @param string $icon  The icon.
  * @param int    $size  The icon size in pixels.
+=======
+ * @since 1.0.0
+ *
+ * @param string $group The icon group.
+ * @param string $icon The icon.
+ * @param int    $size The icon size in pixels.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return string
  */
 function twenty_twenty_one_get_icon_svg( $group, $icon, $size = 24 ) {
@@ -202,9 +284,14 @@ function twenty_twenty_one_get_icon_svg( $group, $icon, $size = 24 ) {
 /**
  * Changes the default navigation arrows to svg icons
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param string $calendar_output The generated HTML of the calendar.
+=======
+ * @param string $calendar_output The generated HTML of the calendar.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return string
  */
 function twenty_twenty_one_change_calendar_nav_arrows( $calendar_output ) {
@@ -219,9 +306,14 @@ add_filter( 'get_calendar', 'twenty_twenty_one_change_calendar_nav_arrows' );
  *
  * Return CSS for non-latin language, if available, or null
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param string $type Whether to return CSS for the "front-end", "block-editor", or "classic-editor".
+=======
+ * @param string $type Whether to return CSS for the "front-end", "block-editor" or "classic-editor".
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return string
  */
 function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
@@ -229,6 +321,7 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 	// Fetch site locale.
 	$locale = get_bloginfo( 'language' );
 
+<<<<<<< HEAD
 	/**
 	 * Filters the fallback fonts for non-latin languages.
 	 *
@@ -236,6 +329,9 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 	 *
 	 * @param array $font_family An array of locales and font families.
 	 */
+=======
+	// Define fallback fonts for non-latin languages.
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	$font_family = apply_filters(
 		'twenty_twenty_one_get_localized_font_family_types',
 		array(
@@ -305,6 +401,7 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 		return '';
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Filters the elements to apply fallback fonts to.
 	 *
@@ -316,6 +413,13 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 		'twenty_twenty_one_get_localized_font_family_elements',
 		array(
 			'front-end'      => array( 'body', 'input', 'textarea', 'button', '.button', '.faux-button', '.wp-block-button__link', '.wp-block-file__button', '.has-drop-cap:not(:focus)::first-letter', '.entry-content .wp-block-archives', '.entry-content .wp-block-categories', '.entry-content .wp-block-cover-image', '.entry-content .wp-block-latest-comments', '.entry-content .wp-block-latest-posts', '.entry-content .wp-block-pullquote', '.entry-content .wp-block-quote.is-large', '.entry-content .wp-block-quote.is-style-large', '.entry-content .wp-block-archives *', '.entry-content .wp-block-categories *', '.entry-content .wp-block-latest-posts *', '.entry-content .wp-block-latest-comments *', '.entry-content p', '.entry-content ol', '.entry-content ul', '.entry-content dl', '.entry-content dt', '.entry-content cite', '.entry-content figcaption', '.entry-content .wp-caption-text', '.comment-content p', '.comment-content ol', '.comment-content ul', '.comment-content dl', '.comment-content dt', '.comment-content cite', '.comment-content figcaption', '.comment-content .wp-caption-text', '.widget_text p', '.widget_text ol', '.widget_text ul', '.widget_text dl', '.widget_text dt', '.widget-content .rssSummary', '.widget-content cite', '.widget-content figcaption', '.widget-content .wp-caption-text' ),
+=======
+	// Define elements to apply fallback fonts to.
+	$elements = apply_filters(
+		'twenty_twenty_one_get_localized_font_family_elements',
+		array(
+			'front-end'      => array( 'body', 'input', 'textarea', 'button', '.button', '.faux-button', '.wp-block-button__link', '.wp-block-file__button', '.has-drop-cap:not(:focus)::first-letter', '.has-drop-cap:not(:focus)::first-letter', '.entry-content .wp-block-archives', '.entry-content .wp-block-categories', '.entry-content .wp-block-cover-image', '.entry-content .wp-block-latest-comments', '.entry-content .wp-block-latest-posts', '.entry-content .wp-block-pullquote', '.entry-content .wp-block-quote.is-large', '.entry-content .wp-block-quote.is-style-large', '.entry-content .wp-block-archives *', '.entry-content .wp-block-categories *', '.entry-content .wp-block-latest-posts *', '.entry-content .wp-block-latest-comments *', '.entry-content p', '.entry-content ol', '.entry-content ul', '.entry-content dl', '.entry-content dt', '.entry-content cite', '.entry-content figcaption', '.entry-content .wp-caption-text', '.comment-content p', '.comment-content ol', '.comment-content ul', '.comment-content dl', '.comment-content dt', '.comment-content cite', '.comment-content figcaption', '.comment-content .wp-caption-text', '.widget_text p', '.widget_text ol', '.widget_text ul', '.widget_text dl', '.widget_text dt', '.widget-content .rssSummary', '.widget-content cite', '.widget-content figcaption', '.widget-content .wp-caption-text' ),
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			'block-editor'   => array( '.editor-styles-wrapper > *', '.editor-styles-wrapper p', '.editor-styles-wrapper ol', '.editor-styles-wrapper ul', '.editor-styles-wrapper dl', '.editor-styles-wrapper dt', '.editor-post-title__block .editor-post-title__input', '.editor-styles-wrapper .wp-block h1', '.editor-styles-wrapper .wp-block h2', '.editor-styles-wrapper .wp-block h3', '.editor-styles-wrapper .wp-block h4', '.editor-styles-wrapper .wp-block h5', '.editor-styles-wrapper .wp-block h6', '.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter', '.editor-styles-wrapper cite', '.editor-styles-wrapper figcaption', '.editor-styles-wrapper .wp-caption-text' ),
 			'classic-editor' => array( 'body#tinymce.wp-editor', 'body#tinymce.wp-editor p', 'body#tinymce.wp-editor ol', 'body#tinymce.wp-editor ul', 'body#tinymce.wp-editor dl', 'body#tinymce.wp-editor dt', 'body#tinymce.wp-editor figcaption', 'body#tinymce.wp-editor .wp-caption-text', 'body#tinymce.wp-editor .wp-caption-dd', 'body#tinymce.wp-editor cite', 'body#tinymce.wp-editor table' ),
 		)
@@ -345,12 +449,21 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 /**
  * Print the first instance of a block in the content, and then break away.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @param string      $block_name The full block type name, or a partial match.
  *                                Example: `core/image`, `core-embed/*`.
  * @param string|null $content    The content to search in. Use null for get_the_content().
+<<<<<<< HEAD
  * @param int         $instances  How many instances of the block will be printed (max). Default  1.
+=======
+ * @param int         $instances  How many instances of the block will be printed (max). Defaults to 1.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return bool Returns true if a block was located & printed, otherwise false.
  */
 function twenty_twenty_one_print_first_instance_of_block( $block_name, $content = null, $instances = 1 ) {
@@ -397,7 +510,10 @@ function twenty_twenty_one_print_first_instance_of_block( $block_name, $content 
 	}
 
 	if ( $blocks_content ) {
+<<<<<<< HEAD
 		/** This filter is documented in wp-includes/post-template.php */
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		echo apply_filters( 'the_content', $blocks_content ); // phpcs:ignore WordPress.Security.EscapeOutput
 		return true;
 	}
@@ -408,6 +524,7 @@ function twenty_twenty_one_print_first_instance_of_block( $block_name, $content 
 /**
  * Retrieve protected post password form content.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  * @since Twenty Twenty-One 1.4 Corrected parameter name for `$output`,
  *                              added the `$post` parameter.
@@ -417,6 +534,14 @@ function twenty_twenty_one_print_first_instance_of_block( $block_name, $content 
  * @return string HTML content for password form for password protected post.
  */
 function twenty_twenty_one_password_form( $output, $post = 0 ) {
+=======
+ * @since 1.0.0
+ *
+ * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global $post.
+ * @return string HTML content for password form for password protected post.
+ */
+function twenty_twenty_one_password_form( $post = 0 ) {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	$post   = get_post( $post );
 	$label  = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
 	$output = '<p class="post-password-message">' . esc_html__( 'This content is password protected. Please enter a password to view.', 'twentytwentyone' ) . '</p>
@@ -425,11 +550,16 @@ function twenty_twenty_one_password_form( $output, $post = 0 ) {
 	';
 	return $output;
 }
+<<<<<<< HEAD
 add_filter( 'the_password_form', 'twenty_twenty_one_password_form', 10, 2 );
+=======
+add_filter( 'the_password_form', 'twenty_twenty_one_password_form' );
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 
 /**
  * Filters the list of attachment image attributes.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param string[]     $attr       Array of attribute values for the image markup, keyed by attribute name.
@@ -445,6 +575,20 @@ function twenty_twenty_one_get_attachment_image_attributes( $attr, $attachment, 
 		return $attr;
 	}
 
+=======
+ * @since 1.0.0
+ *
+ * @param array        $attr       Array of attribute values for the image markup, keyed by attribute name.
+ *                                 See wp_get_attachment_image().
+ * @param WP_Post      $attachment Image attachment post.
+ * @param string|array $size       Requested size. Image size or array of width and height values
+ *                                 (in that order). Default 'thumbnail'.
+ *
+ * @return array
+ */
+function twenty_twenty_one_get_attachment_image_attributes( $attr, $attachment, $size ) {
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	if ( isset( $attr['class'] ) && false !== strpos( $attr['class'], 'custom-logo' ) ) {
 		return $attr;
 	}
@@ -457,7 +601,11 @@ function twenty_twenty_one_get_attachment_image_attributes( $attr, $attachment, 
 		$height = (int) $size[1];
 	} elseif ( $attachment && is_object( $attachment ) && $attachment->ID ) {
 		$meta = wp_get_attachment_metadata( $attachment->ID );
+<<<<<<< HEAD
 		if ( isset( $meta['width'] ) && isset( $meta['height'] ) ) {
+=======
+		if ( $meta['width'] && $meta['height'] ) {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			$width  = (int) $meta['width'];
 			$height = (int) $meta['height'];
 		}

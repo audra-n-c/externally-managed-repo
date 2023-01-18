@@ -62,11 +62,19 @@ class Akismet_Widget extends WP_Widget {
 	}
 
 	function form( $instance ) {
+<<<<<<< HEAD
 		if ( $instance && isset( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
 		else {
 			$title = __( 'Spam Blocked' , 'akismet' );
+=======
+		if ( $instance ) {
+			$title = $instance['title'];
+		}
+		else {
+			$title = __( 'Spam Blocked' , 'akismet');
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		}
 ?>
 
@@ -86,10 +94,13 @@ class Akismet_Widget extends WP_Widget {
 	function widget( $args, $instance ) {
 		$count = get_option( 'akismet_spam_count' );
 
+<<<<<<< HEAD
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = __( 'Spam Blocked' , 'akismet' );
 		}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'];
@@ -99,6 +110,7 @@ class Akismet_Widget extends WP_Widget {
 ?>
 
 	<div class="a-stats">
+<<<<<<< HEAD
 		<a href="https://akismet.com" target="_blank" rel="noopener" title="">
 			<?php
 
@@ -122,6 +134,9 @@ class Akismet_Widget extends WP_Widget {
 
 			?>
 		</a>
+=======
+		<a href="http://akismet.com" target="_blank" title=""><?php printf( _n( '<strong class="count">%1$s spam</strong> blocked by <strong>Akismet</strong>', '<strong class="count">%1$s spam</strong> blocked by <strong>Akismet</strong>', $count , 'akismet'), number_format_i18n( $count ) ); ?></a>
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	</div>
 
 <?php

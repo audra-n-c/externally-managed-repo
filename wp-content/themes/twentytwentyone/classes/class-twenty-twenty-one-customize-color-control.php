@@ -4,13 +4,21 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /**
  * Customize Color Control class.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @see WP_Customize_Control
  */
@@ -18,7 +26,11 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * The control type.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @var string
 	 */
@@ -27,7 +39,13 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Colorpicker palette
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @var array
 	 */
@@ -36,7 +54,13 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Enqueue control related scripts/styles.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @return void
 	 */
@@ -48,7 +72,11 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 			'twentytwentyone-control-color',
 			get_theme_file_uri( 'assets/js/palette-colorpicker.js' ),
 			array( 'customize-controls', 'jquery', 'customize-base', 'wp-color-picker' ),
+<<<<<<< HEAD
 			wp_get_theme()->get( 'Version' ),
+=======
+			(string) filemtime( get_theme_file_path( 'assets/js/palette-colorpicker.js' ) ),
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			false
 		);
 	}
@@ -56,7 +84,13 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Refresh the parameters passed to the JavaScript via JSON.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @uses WP_Customize_Control::to_json()
 	 *

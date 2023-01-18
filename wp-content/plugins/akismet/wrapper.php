@@ -175,7 +175,11 @@ function akismet_get_ip_address() {
 function akismet_cron_recheck() {
 	return Akismet::cron_recheck();
 }
+<<<<<<< HEAD
 function akismet_add_comment_nonce( $post_id ) {
+=======
+function akismet_add_comment_nonce() {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	return Akismet::add_comment_nonce( $post_id );
 }
 function akismet_fix_scheduled_recheck() {
@@ -206,8 +210,12 @@ function akismet_kill_proxy_check( $option ) {
 	return 0;
 }
 function akismet_pingback_forwarded_for( $r, $url ) {
+<<<<<<< HEAD
 	// This functionality is now in core.
 	return false;
+=======
+	return Akismet::pingback_forwarded_for( $r, $url );
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 }
 function akismet_pre_check_pingback( $method ) {
 	return Akismet::pre_check_pingback( $method );

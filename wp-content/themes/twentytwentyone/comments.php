@@ -9,7 +9,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /*
@@ -28,6 +32,10 @@ $twenty_twenty_one_comment_count = get_comments_number();
 
 	<?php
 	if ( have_comments() ) :
+<<<<<<< HEAD
+=======
+		;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		?>
 		<h2 class="comments-title">
 			<?php if ( '1' === $twenty_twenty_one_comment_count ) : ?>
@@ -35,7 +43,11 @@ $twenty_twenty_one_comment_count = get_comments_number();
 			<?php else : ?>
 				<?php
 				printf(
+<<<<<<< HEAD
 					/* translators: %s: Comment count number. */
+=======
+					/* translators: %s: comment count number. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					esc_html( _nx( '%s comment', '%s comments', $twenty_twenty_one_comment_count, 'Comments title', 'twentytwentyone' ) ),
 					esc_html( number_format_i18n( $twenty_twenty_one_comment_count ) )
 				);
@@ -58,7 +70,12 @@ $twenty_twenty_one_comment_count = get_comments_number();
 		<?php
 		the_comments_pagination(
 			array(
+<<<<<<< HEAD
 				'before_page_number' => esc_html__( 'Page', 'twentytwentyone' ) . ' ',
+=======
+				/* translators: There is a space after page. */
+				'before_page_number' => esc_html__( 'Page ', 'twentytwentyone' ),
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
@@ -82,6 +99,10 @@ $twenty_twenty_one_comment_count = get_comments_number();
 	<?php
 	comment_form(
 		array(
+<<<<<<< HEAD
+=======
+			'logged_in_as'       => null,
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			'title_reply'        => esc_html__( 'Leave a comment', 'twentytwentyone' ),
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 			'title_reply_after'  => '</h2>',

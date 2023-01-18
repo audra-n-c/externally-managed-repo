@@ -4,13 +4,21 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
+<<<<<<< HEAD
 	<nav id="site-navigation" class="primary-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone' ); ?>">
+=======
+	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone' ); ?>">
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		<div class="menu-button-container">
 			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
 				<span class="dropdown-icon open"><?php esc_html_e( 'Menu', 'twentytwentyone' ); ?>
@@ -33,5 +41,9 @@
 		);
 		?>
 	</nav><!-- #site-navigation -->
+<<<<<<< HEAD
 	<?php
 endif;
+=======
+<?php endif; ?>
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571

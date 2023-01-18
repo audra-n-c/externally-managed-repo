@@ -23,7 +23,11 @@
 	}
 
 	.wp-block-quote__citation {
+<<<<<<< HEAD
 		color: currentColor;
+=======
+		color: var(--global--color-primary);
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		font-size: var(--global--font-size-xs);
 		font-style: var(--quote--font-style-cite);
 

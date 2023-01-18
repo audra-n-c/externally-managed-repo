@@ -11,6 +11,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  */
 
@@ -23,6 +24,13 @@ get_header(); ?>
 <?php endif; ?>
 
 <?php
+=======
+ * @since 1.0.0
+ */
+
+get_header();
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 if ( have_posts() ) {
 
 	// Load posts loop.

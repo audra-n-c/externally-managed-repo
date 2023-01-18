@@ -20,12 +20,18 @@
 // Button style
 // - Applies button styles to blocks and elements that share them.
 @mixin button-style() {
+<<<<<<< HEAD
 	border: var(--button--border-width) solid transparent;
 	border-radius: var(--button--border-radius);
+=======
+	line-height: var(--button--line-height);
+	color: var(--button--color-text);
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	cursor: pointer;
 	font-weight: var(--button--font-weight);
 	font-family: var(--button--font-family);
 	font-size: var(--button--font-size);
+<<<<<<< HEAD
 	line-height: var(--button--line-height);
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	text-decoration: none;
@@ -73,6 +79,28 @@
 	}
 
 	// Disabled Button colors
+=======
+	background-color: var(--button--color-background);
+	border-radius: var(--button--border-radius);
+	border: var(--button--border-width) solid var(--button--color-background);
+	text-decoration: none;
+	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+
+	&:focus {
+		background: transparent;
+		outline-offset: -6px;
+		outline: 2px dotted currentColor;
+
+		.is-dark-theme & {
+			color: var(--button--color-background);
+		}
+
+		&:not(.has-background) {
+			color: var(--button--color-text-hover);
+		}
+	}
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	&:disabled {
 		background-color: var(--global--color-white-50);
 		border-color: var(--global--color-white-50);

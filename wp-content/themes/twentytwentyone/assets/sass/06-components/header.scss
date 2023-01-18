@@ -77,6 +77,21 @@
 	line-height: 1.4;
 }
 
+<<<<<<< HEAD
+=======
+a.custom-logo-link {
+	text-decoration: none;
+
+	&:focus {
+		// Change colors when the body background is white.
+		.has-background-white &,
+		.is-dark-theme & {
+			background: none;
+		}
+	}
+}
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 .site-title > a {
 	text-decoration-color: var(--global--color-secondary);
 }

@@ -6,7 +6,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 ?>
@@ -32,7 +36,11 @@
 			array(
 				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
 				'after'    => '</nav>',
+<<<<<<< HEAD
 				/* translators: %: Page number. */
+=======
+				/* translators: %: page number. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
 			)
 		);
@@ -43,4 +51,8 @@
 	<footer class="entry-footer default-max-width">
 		<?php twenty_twenty_one_entry_meta_footer(); ?>
 	</footer><!-- .entry-footer -->
+<<<<<<< HEAD
 </article><!-- #post-<?php the_ID(); ?> -->
+=======
+</article><!-- #post-${ID} -->
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571

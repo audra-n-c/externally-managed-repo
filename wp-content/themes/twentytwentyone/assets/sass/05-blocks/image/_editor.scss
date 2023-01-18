@@ -1,7 +1,11 @@
 /* Center image block by default in the editor */
 
+<<<<<<< HEAD
 .wp-block-image,
 .wp-block-image > div:not(.components-placeholder) {
+=======
+.wp-block-image > div {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	text-align: center;
 }
 

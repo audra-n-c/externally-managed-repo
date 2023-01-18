@@ -25,6 +25,7 @@ a:hover {
 	background: rgba(255, 255, 255, .9);
 
 	// Change text color when the body background is dark.
+<<<<<<< HEAD
 	.is-dark-theme & {
 		background: var(--global--color-black);
 		color: var(--global--color-white);
@@ -33,6 +34,11 @@ a:hover {
 		.meta-nav {
 			color: var(--wp--style--color--link, var(--global--color-white));
 		}
+=======
+	.is-dark-theme &,
+	.is-dark-theme & .meta-nav {
+		color: var(--wp--style--color--link, var(--global--color-background));
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 
 	// Change colors when the body background is white.
@@ -57,10 +63,13 @@ a:hover {
 		}
 	}
 
+<<<<<<< HEAD
 	&.custom-logo-link {
 		background: none;
 	}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	img {
 		outline: 2px dotted var(--wp--style--color--link, var(--global--color-primary));
 	}

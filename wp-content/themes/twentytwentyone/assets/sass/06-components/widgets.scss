@@ -20,6 +20,7 @@
 		margin-top: calc(3 * var(--global--spacing-vertical));
 	}
 
+<<<<<<< HEAD
 	.wp-block-social-links {
 
 		&.alignright {
@@ -75,6 +76,8 @@
 		font-size: var(--global--font-size-xs);
 	}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -110,6 +113,33 @@
 			text-decoration-style: dotted;
 		}
 	}
+<<<<<<< HEAD
+=======
+
+	.wp-block-social-links {
+
+		&.alignright {
+			margin-top: var(--global--spacing-vertical);
+			justify-content: flex-end;
+		}
+
+		&.alignleft {
+			margin-top: var(--global--spacing-vertical);
+		}
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.widget-title {
+	font-size: var(--global--font-size-sm);
+	font-weight: var(--widget--font-weight-title);
+	line-height: var(--widget--line-height-title);
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 }
 
 // Search widget styles
@@ -148,7 +178,18 @@
 
 	.search-submit {
 		margin-left: 0;
+<<<<<<< HEAD
 		margin-bottom: calc(0.5 * var(--global--spacing-vertical));
+=======
+		background-color: transparent;
+		color: var(--button--color-text-hover);
+		margin-bottom: calc(0.5 * var(--global--spacing-vertical));
+
+		&:hover {
+			background-color: var(--button--color-background);
+			color: var(--button--color-text);
+		}
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 }
 

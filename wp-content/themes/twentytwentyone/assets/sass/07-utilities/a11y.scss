@@ -38,3 +38,14 @@
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+<<<<<<< HEAD
+=======
+
+@media (prefers-reduced-motion) {
+
+	* {
+		transition-delay: 0s !important;
+		transition-duration: 0s !important;
+	}
+}
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571

@@ -6,15 +6,25 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /**
  * Function to return the array of starter content for the theme.
  *
+<<<<<<< HEAD
  * Passes it through the `twenty_twenty_one_starter_content` filter before returning.
  *
  * @since Twenty Twenty-One 1.0
+=======
+ * Passes it through the `twentytwenty_starter_content` filter before returning.
+ *
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return array A filtered array of args for the starter_content.
  */
@@ -40,7 +50,11 @@ function twenty_twenty_one_get_starter_content() {
 					<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-twentytwentyone-columns-overlap"} -->
 					<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-twentytwentyone-columns-overlap"><!-- wp:column {"verticalAlignment":"center"} -->
 					<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"align":"full","sizeSlug":"large"} -->
+<<<<<<< HEAD
 					<figure class="wp-block-image alignfull size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" alt="' . esc_attr__( '&#8220;Roses Trémières&#8221; by Berthe Morisot', 'twentytwentyone' ) . '"/></figure>
+=======
+					<figure class="wp-block-image alignfull size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" alt="' . esc_attr__( '&#8220;Roses Tremieres&#8221; by Berthe Morisot', 'twentytwentyone' ) . '"/></figure>
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					<!-- /wp:image -->
 
 					<!-- wp:spacer -->
@@ -176,7 +190,11 @@ function twenty_twenty_one_get_starter_content() {
 	/**
 	 * Filters the array of starter content.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */

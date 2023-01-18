@@ -11,6 +11,7 @@
 		--button--color-background: var(--global--color-secondary);
 		--button--color-background-active: var(--global--color-background);
 		--global--color-border: #9ea1a7;
+<<<<<<< HEAD
 
 		/* Block: Table */
 		--table--stripes-border-color: rgba(240, 240, 240, 0.15);
@@ -18,6 +19,18 @@
 	}
 
 	.is-dark-theme img {
+=======
+	}
+
+	.is-dark-theme.is-dark-theme .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button),
+	.is-dark-theme.is-dark-theme .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) .meta-nav {
+		background: #000;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.is-dark-theme.is-dark-theme img {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		filter: brightness(0.85) contrast(1.1);
 	}
 
@@ -49,6 +62,10 @@
 		position: fixed;
 		bottom: 5px;
 		left: 5px;
+<<<<<<< HEAD
+=======
+		transition: bottom 0.5s;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 
 	#dark-mode-toggler.fixed-bottom.hide:not(:focus) {
@@ -81,7 +98,11 @@
 @media only screen and (max-width: 481px) {
 
 	body:not(.primary-navigation-open) #dark-mode-toggler.relative ~ nav {
+<<<<<<< HEAD
 		top: 88px;
+=======
+		top: calc(44px + 44px);
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 }
 @media only screen {
@@ -105,9 +126,12 @@
 		display: none;
 	}
 }
+<<<<<<< HEAD
 @media only screen and (prefers-reduced-motion: no-preference) {
 
 	#dark-mode-toggler.fixed-bottom {
 		transition: bottom 0.5s;
 	}
 }
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571

@@ -1,9 +1,15 @@
 === Twenty Twenty-Two ===
 Contributors: wordpressdotorg
 Requires at least: 5.9
+<<<<<<< HEAD
 Tested up to: 6.1
 Requires PHP: 5.6
 Stable tag: 1.3
+=======
+Tested up to: 5.9
+Requires PHP: 5.6
+Stable tag: 1.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,12 +17,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page.
 
+<<<<<<< HEAD
 The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Site Editor features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks.
+=======
+The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks.
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 
 Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 1.3 =
 * Released: November 1, 2022
 
@@ -32,6 +43,8 @@ https://wordpress.org/support/article/twenty-twenty-two-changelog#Version_1.2
 
 https://wordpress.org/support/article/twenty-twenty-two-changelog#Version_1.1
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 = 1.0 =
 * Released: January 25, 2022
 
@@ -54,6 +67,7 @@ GNU General Public License for more details.
 
 This theme bundles the following third-party resources:
 
+<<<<<<< HEAD
 DM Sans Font
 Copyright 2014-2017 Indian Type Foundry (info@indiantypefoundry.com)
 Copyright 2019 Google LLC
@@ -71,6 +85,8 @@ Copyright (c) 2016-2020 The Inter Project Authors.
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/rsms/inter
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 Source Serif Font
 Copyright 2014-2021 Adobe (http://www.adobe.com/)
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1

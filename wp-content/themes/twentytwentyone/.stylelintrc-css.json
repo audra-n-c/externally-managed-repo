@@ -1,6 +1,10 @@
 {
 	"extends": [
+<<<<<<< HEAD
 		"@wordpress/stylelint-config"
+=======
+		"stylelint-config-wordpress"
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	],
 	"rules": {
 		"indentation": "tab",
@@ -17,7 +21,11 @@
 		"at-rule-empty-line-before": null,
 		"selector-pseudo-element-colon-notation": null,
 		"number-leading-zero": null,
+<<<<<<< HEAD
 		"no-descending-specificity": null,
 		"length-zero-no-unit": [true, {"ignore": ["custom-properties"]}]
+=======
+		"no-descending-specificity": null
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 }

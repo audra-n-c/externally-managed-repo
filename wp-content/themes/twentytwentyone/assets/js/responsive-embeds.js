@@ -7,7 +7,11 @@
 /**
  * Add max-width & max-height to <iframe> elements, depending on their width & height props.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @return {void}
  */

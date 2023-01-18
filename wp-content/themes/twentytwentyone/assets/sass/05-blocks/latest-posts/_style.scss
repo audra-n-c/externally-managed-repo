@@ -15,11 +15,14 @@
 		}
 	}
 
+<<<<<<< HEAD
 	.widget-area &:not(.is-grid) > li {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	&.is-grid {
 		word-wrap: break-word;
 		word-break: break-word;
@@ -70,11 +73,14 @@
 		margin-bottom: calc(0.333 * var(--global--spacing-vertical));
 	}
 
+<<<<<<< HEAD
 	.widget-area & > li > a {
 		font-size: var(--global--font-size-sm);
 		margin-bottom: 0;
 	}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	// Post author
 	.wp-block-latest-posts__post-author {
 		color: var(--global--color-primary);

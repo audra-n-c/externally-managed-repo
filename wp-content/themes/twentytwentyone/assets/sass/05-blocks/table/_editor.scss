@@ -1,11 +1,14 @@
 table,
 .wp-block-table {
 
+<<<<<<< HEAD
 	thead,
 	tfoot {
 		text-align: center;
 	}
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	th {
 		font-family: var(--heading--font-family);
 	}
@@ -16,10 +19,16 @@ table,
 	}
 
 	&.is-style-regular .has-background,
+<<<<<<< HEAD
 	&.is-style-stripes .has-background,
 	&.is-style-stripes .has-background thead tr,
 	&.is-style-stripes .has-background tfoot tr,
 	&.is-style-stripes .has-background tbody tr {
+=======
+	&.is-style-stripes .has-background thead tr,
+	&.is-style-stripes .has-background tfoot tr,
+	&.is-style-stripes .has-background tbody tr:nth-child(even) {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		color: var(--table--has-background-text-color);
 	}
 
@@ -34,10 +43,13 @@ table,
 		tbody tr:nth-child(odd) {
 			background-color: var(--table--stripes-background-color);
 		}
+<<<<<<< HEAD
 
 		.has-background tbody tr:nth-child(odd) {
 			background-color: var(--global--color-white-90);
 		}
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 }
 

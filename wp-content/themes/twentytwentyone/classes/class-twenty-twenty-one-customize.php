@@ -4,21 +4,35 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 	/**
 	 * Customizer Settings.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 */
 	class Twenty_Twenty_One_Customize {
 
 		/**
 		 * Constructor. Instantiate the object.
 		 *
+<<<<<<< HEAD
 		 * @since Twenty Twenty-One 1.0
+=======
+		 * @access public
+		 *
+		 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		 */
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'register' ) );
@@ -27,9 +41,18 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Register customizer options.
 		 *
+<<<<<<< HEAD
 		 * @since Twenty Twenty-One 1.0
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+=======
+		 * @access public
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+		 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		 * @return void
 		 */
 		public function register( $wp_customize ) {
@@ -92,7 +115,11 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 				array(
 					'capability'        => 'edit_theme_options',
 					'default'           => 'excerpt',
+<<<<<<< HEAD
 					'sanitize_callback' => static function( $value ) {
+=======
+					'sanitize_callback' => function( $value ) {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 						return 'excerpt' === $value || 'full' === $value ? $value : 'excerpt';
 					},
 				)
@@ -146,9 +173,18 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Sanitize boolean for checkbox.
 		 *
+<<<<<<< HEAD
 		 * @since Twenty Twenty-One 1.0
 		 *
 		 * @param bool $checked Whether or not a box is checked.
+=======
+		 * @access public
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param bool $checked Whether or not a box is checked.
+		 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		 * @return bool
 		 */
 		public static function sanitize_checkbox( $checked = null ) {
@@ -158,7 +194,13 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Render the site title for the selective refresh partial.
 		 *
+<<<<<<< HEAD
 		 * @since Twenty Twenty-One 1.0
+=======
+		 * @access public
+		 *
+		 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		 *
 		 * @return void
 		 */
@@ -169,7 +211,13 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Render the site tagline for the selective refresh partial.
 		 *
+<<<<<<< HEAD
 		 * @since Twenty Twenty-One 1.0
+=======
+		 * @access public
+		 *
+		 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		 *
 		 * @return void
 		 */

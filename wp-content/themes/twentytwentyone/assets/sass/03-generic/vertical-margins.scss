@@ -3,7 +3,11 @@
  *
  * - Set vertical margins and responsive widths on
  *   top-level wrappers and content wrappers
+<<<<<<< HEAD
  * - `--global--width-content` is a responsive variable
+=======
+ * - `--global--width-content` is a responsive veriable
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * - See: globals/_global-width-responsive.scss
  */
 
@@ -32,7 +36,11 @@
 
 /**
  * Site-main children wrappers
+<<<<<<< HEAD
  * - Add double vertical margins here for clearer hierarchy
+=======
+ * - Add double vertical margins here for clearer heirarchy
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 .site-main > * {
 	margin-top: calc(3 * var(--global--spacing-vertical));
@@ -92,8 +100,12 @@
 .site-main > .not-found > *, // apply vertical margins to article level
 .entry-content > *,
 [class*="inner-container"] > *,
+<<<<<<< HEAD
 .wp-block-template-part > *,
 .wp-block-post-template :where(li > *) { // using :where keeps specificity low.
+=======
+.wp-block-template-part > * {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 
 	margin-top: calc(0.666 * var(--global--spacing-vertical));
 	margin-bottom: calc(0.666 * var(--global--spacing-vertical));

@@ -6,7 +6,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 get_header();
@@ -17,7 +21,11 @@ if ( have_posts() ) {
 		<h1 class="page-title">
 			<?php
 			printf(
+<<<<<<< HEAD
 				/* translators: %s: Search term. */
+=======
+				/* translators: %s: search term. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				esc_html__( 'Results for "%s"', 'twentytwentyone' ),
 				'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 			);
@@ -29,7 +37,11 @@ if ( have_posts() ) {
 		<?php
 		printf(
 			esc_html(
+<<<<<<< HEAD
 				/* translators: %d: The number of search results. */
+=======
+				/* translators: %d: the number of search results. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				_n(
 					'We found %d result for your search.',
 					'We found %d results for your search.',

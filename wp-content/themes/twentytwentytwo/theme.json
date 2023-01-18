@@ -178,6 +178,7 @@
 				{
 					"fontFamily": "\"Source Serif Pro\", serif",
 					"name": "Source Serif Pro",
+<<<<<<< HEAD
 					"slug": "source-serif-pro",
 					"fontFace": [
 						{
@@ -195,6 +196,9 @@
 							"src": [ "file:./assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2" ]
 						}
 					]
+=======
+					"slug": "source-serif-pro"
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				}
 			],
 			"fontSizes": [
@@ -273,7 +277,10 @@
 					"fontFamily": "var(--wp--preset--font-family--system-font)",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
+<<<<<<< HEAD
 					"fontStyle": "italic",
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					"fontWeight": "normal"
 				}
 			}

@@ -9,19 +9,31 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /**
  * Add a button to top-level menu items that has sub-menus.
  * An icon is added using CSS depending on the value of aria-expanded.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @param string $output Nav menu item start element.
  * @param object $item   Nav menu item.
  * @param int    $depth  Depth.
  * @param object $args   Nav menu args.
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return string Nav menu item start element.
  */
 function twenty_twenty_one_add_sub_menu_toggle( $output, $item, $depth, $args ) {
@@ -41,10 +53,18 @@ add_filter( 'walker_nav_menu_start_el', 'twenty_twenty_one_add_sub_menu_toggle',
 /**
  * Detects the social network from a URL and returns the SVG code for its icon.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
  * @param string $uri  Social link.
  * @param int    $size The icon size in pixels.
+=======
+ * @since 1.0.0
+ *
+ * @param string $uri Social link.
+ * @param int    $size The icon size in pixels.
+ *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @return string
  */
 function twenty_twenty_one_get_social_link_svg( $uri, $size = 24 ) {
@@ -54,8 +74,11 @@ function twenty_twenty_one_get_social_link_svg( $uri, $size = 24 ) {
 /**
  * Displays SVG icons in the footer navigation.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @param string   $item_output The menu item's starting HTML output.
  * @param WP_Post  $item        Menu item data object.
  * @param int      $depth       Depth of the menu. Used for padding.
@@ -79,11 +102,16 @@ add_filter( 'walker_nav_menu_start_el', 'twenty_twenty_one_nav_menu_social_icons
 /**
  * Filters the arguments for a single nav menu item.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  *
  * @param stdClass $args  An object of wp_nav_menu() arguments.
  * @param WP_Post  $item  Menu item data object.
  * @param int      $depth Depth of menu item. Used for padding.
+<<<<<<< HEAD
  * @return stdClass
  */
 function twenty_twenty_one_add_menu_description_args( $args, $item, $depth ) {
@@ -91,11 +119,21 @@ function twenty_twenty_one_add_menu_description_args( $args, $item, $depth ) {
 		$args->link_after = '';
 	}
 
+=======
+ *
+ * @return stdClass
+ */
+function twenty_twenty_one_add_menu_description_args( $args, $item, $depth ) {
+	$args->link_after = '';
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	if ( 0 === $depth && isset( $item->description ) && $item->description ) {
 		// The extra <span> element is here for styling purposes: Allows the description to not be underlined on hover.
 		$args->link_after = '<p class="menu-item-description"><span>' . $item->description . '</span></p>';
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	return $args;
 }
 add_filter( 'nav_menu_item_args', 'twenty_twenty_one_add_menu_description_args', 10, 3 );

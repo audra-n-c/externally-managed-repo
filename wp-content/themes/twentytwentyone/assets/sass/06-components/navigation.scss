@@ -10,15 +10,29 @@
 	padding-top: calc(0.5 * var(--global--spacing-vertical));
 	padding-bottom: calc(0.25 * var(--global--spacing-vertical));
 
+<<<<<<< HEAD
+=======
+	#primary-mobile-menu {
+		margin-left: auto;
+		padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(0.5 * var(--button--padding-horizontal));
+	}
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	@include media(mobile-only) {
 		display: flex;
 	}
 
+<<<<<<< HEAD
 	// Override specificity from default button styles.
 	#primary-mobile-menu {
 		display: flex;
 		margin-left: auto;
 		padding: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit))) calc(0.5 * var(--button--padding-horizontal));
+=======
+	// Override specificty from default button styles.
+	.button.button {
+		display: flex;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		font-size: var(--primary-nav--font-size-button);
 		font-weight: var(--primary-nav--font-weight-button);
 		background-color: transparent;
@@ -101,12 +115,18 @@
 		padding-right: var(--global--spacing-unit);
 		padding-bottom: var(--global--spacing-horizontal);
 		background-color: var(--global--color-background);
+<<<<<<< HEAD
 		transform: translateY(var(--global--spacing-vertical));
 
 		@media (prefers-reduced-motion: no-preference) {
 			transition: all .15s ease-in-out;
 		}
 
+=======
+		transition: all .15s ease-in-out;
+		transform: translateY(var(--global--spacing-vertical));
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		@include media(mobile-only) {
 			height: 100vh;
 			z-index: 499;
@@ -222,7 +242,11 @@
 				margin: 0;
 				width: inherit;
 
+<<<<<<< HEAD
 				&:last-child {
+=======
+				&:last-child() {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					margin-right: 0;
 				}
 			}
@@ -282,18 +306,25 @@
 			position: relative;
 
 			@include media(mobile) {
+<<<<<<< HEAD
 				@media (prefers-reduced-motion: no-preference) {
 					transition: all 0.5s ease;
 				}
 			}
 
 			@include media(mobile) {
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				left: 0;
 				margin: 0;
 				min-width: max-content;
 				position: absolute;
 				top: 100%;
 				padding-top: 3px;
+<<<<<<< HEAD
+=======
+				transition: all 0.5s ease;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 				z-index: 88888;
 
 				&:before,
@@ -461,7 +492,11 @@
 
 			@include media(mobile-only) {
 
+<<<<<<< HEAD
 				&:last-child {
+=======
+				&:last-child() {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					margin-bottom: 0;
 				}
 

@@ -6,7 +6,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 ?>
@@ -18,7 +22,11 @@
 			<h1 class="page-title">
 				<?php
 				printf(
+<<<<<<< HEAD
 					/* translators: %s: Search term. */
+=======
+					/* translators: %s: search term. */
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					esc_html__( 'Results for "%s"', 'twentytwentyone' ),
 					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
@@ -39,8 +47,13 @@
 			<?php
 			printf(
 				'<p>' . wp_kses(
+<<<<<<< HEAD
 					/* translators: %s: Link to WP admin new post page. */
 					__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwentyone' ),
+=======
+					/* translators: 1: link to WP admin new post page. */
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentytwentyone' ),
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 					array(
 						'a' => array(
 							'href' => array(),

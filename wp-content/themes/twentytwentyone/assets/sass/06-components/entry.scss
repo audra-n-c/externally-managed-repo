@@ -53,6 +53,13 @@ h1.entry-title {
 
 		margin: var(--global--spacing-vertical) 0 !important;
 		max-width: 100% !important;
+<<<<<<< HEAD
+=======
+
+		@include media(mobile) {
+			max-width: var(--global--spacing-vertical) !important;
+		}
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 
 	// Classic editor audio embeds.

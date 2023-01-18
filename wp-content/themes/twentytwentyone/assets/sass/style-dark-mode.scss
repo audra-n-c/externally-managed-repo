@@ -12,6 +12,7 @@
 		--button--color-background-active: var(--global--color-background);
 		--global--color-border: #9ea1a7;
 
+<<<<<<< HEAD
 		/* Block: Table */
 		--table--stripes-border-color: rgba(240, 240, 240, 0.15);
 		--table--stripes-background-color: rgba(240, 240, 240, 0.15);
@@ -19,6 +20,18 @@
 
 	.is-dark-theme img {
 		filter: brightness(.85) contrast(1.1);
+=======
+		.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button),
+		.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) .meta-nav {
+			background: #000;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		img {
+			filter: brightness(.85) contrast(1.1);
+		}
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 
 	.respect-color-scheme-preference.is-dark-theme body {
@@ -46,8 +59,14 @@
 
 		&.fixed-bottom {
 			position: fixed;
+<<<<<<< HEAD
 			bottom: 5px; // The bottom property has transition (see below).
 			right: 5px;
+=======
+			bottom: 5px;
+			right: 5px;
+			transition: bottom 0.5s;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 
 			&.hide:not(:focus) {
 				bottom: -80px;
@@ -96,11 +115,14 @@
 		.is-IE & {
 			display: none;
 		}
+<<<<<<< HEAD
 
 		&.fixed-bottom {
 			@media (prefers-reduced-motion: no-preference) {
 				transition: bottom 0.5s;
 			}
 		}
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	}
 }

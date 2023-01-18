@@ -7,8 +7,11 @@
 /**
  * Polyfill for Element.closest() because we need to support IE11.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @see https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
  */
 if ( ! Element.prototype.matches ) {
@@ -31,8 +34,11 @@ if ( ! Element.prototype.closest ) {
 /**
  * Polyfill for NodeList.foreach() because we need to support IE11.
  *
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
  *
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  * @see https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach
  */
 if ( window.NodeList && ! NodeList.prototype.forEach ) {

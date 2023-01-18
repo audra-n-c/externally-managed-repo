@@ -4,7 +4,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
+<<<<<<< HEAD
  * @since Twenty Twenty-One 1.0
+=======
+ * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
  */
 
 /**
@@ -15,7 +19,13 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Instantiate the object.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 */
 	public function __construct() {
 
@@ -32,9 +42,18 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Determine the luminance of the given color and then return #fff or #000 so that the text is always readable.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
 	 *
 	 * @param string $background_color The background color.
+=======
+	 * @access public
+	 *
+	 * @param string $background_color The background color.
+	 *
+	 * @since 1.0.0
+	 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 * @return string (hex color)
 	 */
 	public function custom_get_readable_color( $background_color ) {
@@ -48,9 +67,18 @@ class Twenty_Twenty_One_Custom_Colors {
 	 * Both text and link colors needs to be updated.
 	 * The code below needs to be updated, because the colors are no longer theme mods.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
 	 *
 	 * @param string|null $context Can be "editor" or null.
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string|null $context Can be "editor" or null.
+	 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 * @return string
 	 */
 	public function generate_custom_color_variables( $context = null ) {
@@ -66,8 +94,13 @@ class Twenty_Twenty_One_Custom_Colors {
 			$theme_css .= '--button--color-text-hover: ' . $this->custom_get_readable_color( $background_color ) . ';';
 
 			if ( '#fff' === $this->custom_get_readable_color( $background_color ) ) {
+<<<<<<< HEAD
 				$theme_css .= '--table--stripes-border-color: rgba(240, 240, 240, 0.15);';
 				$theme_css .= '--table--stripes-background-color: rgba(240, 240, 240, 0.15);';
+=======
+				$theme_css .= '--table--stripes-border-color: var(--global--color-dark-gray);';
+				$theme_css .= '--table--stripes-background-color: var(--global--color-dark-gray);';
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			}
 		}
 
@@ -79,7 +112,13 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Customizer & frontend custom color variables.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @return void
 	 */
@@ -92,7 +131,13 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Editor custom color variables.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 *
 	 * @return void
 	 */
@@ -101,7 +146,11 @@ class Twenty_Twenty_One_Custom_Colors {
 			'twenty-twenty-one-custom-color-overrides',
 			get_theme_file_uri( 'assets/css/custom-color-overrides.css' ),
 			array(),
+<<<<<<< HEAD
 			wp_get_theme()->get( 'Version' )
+=======
+			(string) filemtime( get_theme_file_path( 'assets/css/custom-color-overrides.css' ) )
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		);
 
 		$background_color = get_theme_mod( 'background_color', 'D1E4DD' );
@@ -115,9 +164,18 @@ class Twenty_Twenty_One_Custom_Colors {
 	 *
 	 * @static
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
 	 *
 	 * @param string $hex The HEX color.
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string $hex The HEX color.
+	 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 * @return int Returns a number (0-255).
 	 */
 	public static function get_relative_luminance_from_hex( $hex ) {
@@ -143,9 +201,18 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Adds a class to <body> if the background-color is dark.
 	 *
+<<<<<<< HEAD
 	 * @since Twenty Twenty-One 1.0
 	 *
 	 * @param array $classes The existing body classes.
+=======
+	 * @access public
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param array $classes The existing body classes.
+	 *
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	 * @return array
 	 */
 	public function body_class( $classes ) {

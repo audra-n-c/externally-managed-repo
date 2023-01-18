@@ -2,16 +2,43 @@
  * Button
  */
 .site .button,
+<<<<<<< HEAD
 button,
 input[type="submit"],
 input[type="reset"],
 .wp-block-search .wp-block-search__button,
 .wp-block-button .wp-block-button__link,
 .wp-block-file a.wp-block-file__button {
+=======
+input[type="submit"],
+input[type="reset"],
+.wp-block-search__button,
+.wp-block-button .wp-block-button__link {
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 	// Extend button style
 	@include button-style();
 }
 
+<<<<<<< HEAD
+=======
+.site .button,
+input[type="submit"],
+input[type="reset"],
+.wp-block-search .wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+
+	&:active {
+		color: var(--button--color-text-active);
+		background-color: var(--button--color-background-active);
+	}
+
+	&:hover {
+		color: var(--button--color-text-hover);
+		background: transparent;
+	}
+}
+
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 /**
  * Block Options
  */
@@ -20,6 +47,7 @@ input[type="reset"],
 	// Target the default and filled button states.
 	&:not(.is-style-outline) {
 
+<<<<<<< HEAD
 		.wp-block-button__link:not(:hover):not(:active) {
 
 			// Text colors
@@ -53,12 +81,33 @@ input[type="reset"],
 			border-color: currentColor !important;
 			background-color: transparent !important;
 			color: inherit !important;
+=======
+		.wp-block-button__link {
+
+			&:active {
+				color: var(--button--color-text-active) !important;
+				background: transparent !important;
+				border-color: var(--button--color-background);
+			}
+
+			&:hover {
+				color: var(--button--color-text-hover) !important;
+				background: transparent !important;
+				border-color: var(--button--color-background);
+			}
+
+			&:focus {
+				color: var(--button--color-text) !important;
+				background: var(--button--color-background) !important;
+			}
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 		}
 	}
 
 	// Outline Style.
 	&.is-style-outline {
 
+<<<<<<< HEAD
 		.wp-block-button__link:not(:hover):not(:active) {
 
 			// Border colors
@@ -105,6 +154,66 @@ input[type="reset"],
 
 			.has-text-color & {
 				color: var(--local--color-background, var(--global--color-background)) !important;
+=======
+		.wp-block-button__link {
+			padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+
+			&:not(.has-background) {
+				background: transparent;
+			}
+
+			&:not(.has-background):not(.has-text-color) {
+				background: transparent;
+				color: var(--button--color-background);
+				border-color: var(--button--color-background);
+			}
+
+			&.has-background:not(.has-text-color) {
+				color: currentColor;
+			}
+
+			&.has-background.has-gray-background-color:not(.has-text-color),
+			&.has-background.has-dark-gray-background-color:not(.has-text-color),
+			&.has-background.has-black-background-color:not(.has-text-color) {
+				color: var(--global--color-white);
+			}
+
+			.is-dark-theme & {
+
+				&:not(.has-text-color) {
+
+					&.has-background {
+						color: var(--global--color-dark-gray);
+					}
+
+					&.has-background.has-gray-background-color,
+					&.has-background.has-dark-gray-background-color,
+					&.has-background.has-black-background-color {
+						color: var(--global--color-white);
+					}
+				}
+			}
+
+			&.has-text-color,
+			&.has-background.has-text-color {
+				border-color: currentColor;
+			}
+
+			&:active,
+			&:hover {
+				color: var(--button--color-text) !important;
+				background: var(--button--color-background) !important;
+				border-color: var(--button--color-background);
+
+				&.has-text-color {
+					border-color: var(--button--color-background);
+				}
+			}
+
+			&:focus {
+				color: var(--button--color-background) !important;
+				background: transparent !important;
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 			}
 		}
 	}

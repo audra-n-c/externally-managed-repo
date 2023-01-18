@@ -108,9 +108,12 @@
 	&.is-style-twentytwentyone-border {
 		border: calc(3 * var(--separator--height)) solid var(--global--color-border);
 	}
+<<<<<<< HEAD
 
 	/* The background color class is used just for the overlay, and does not need to be applied to the inner container. */
 	&[class*="-background-color"][class] .wp-block-cover__inner-container {
 		background-color: unset;
 	}
+=======
+>>>>>>> 8adbba5df3c87832de0c756811c05091cf31f571
 }
